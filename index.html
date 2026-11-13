@@ -105,6 +105,27 @@ img,video{max-width:100%}
 .earlier .tag{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--text-lo)}
 @media (max-width:560px){.earlier li{grid-template-columns:1fr;gap:6px}}
 
+/* Next event */
+.next{padding-top:72px;padding-bottom:0}
+.feature{display:flex;flex-wrap:wrap;border:1px solid var(--line-3);background:var(--panel)}
+.feature-img{flex:1 1 420px;min-width:0;background:#000;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--line-3)}
+.feature-img img{display:block;width:100%;height:auto}
+.feature-body{flex:1 1 380px;min-width:0;padding:clamp(28px,5vw,64px);display:flex;flex-direction:column;justify-content:center;gap:18px}
+.badge{align-self:flex-start;border:1px solid var(--silver);padding:8px 14px;font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--text-hi)}
+.feature-body h2{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(44px,5.5vw,76px);line-height:1}
+.feature-body .collab{margin:0;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--text-lo)}
+.facts{margin:6px 0 8px;padding:0;list-style:none;border-top:1px solid var(--line-3)}
+.facts li{display:grid;grid-template-columns:92px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-3);font-size:15px;color:var(--text-mid)}
+.facts .k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--text-lo);padding-top:3px}
+.feature-ctas{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:760px){.feature-img{border-right:0;border-bottom:1px solid var(--line-3)}}
+
+/* Recap film */
+.film{margin:0 0 44px;border:1px solid var(--line-3);background:#000}
+.film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+.film figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:18px 24px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--text-lo);border-top:1px solid var(--line-3)}
+.film figcaption strong{color:var(--text-hi);font-weight:500}
+
 /* Instagram band */
 .ig{padding-top:104px}
 .ig a{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid var(--line-3);border-bottom:1px solid var(--line-3);padding:40px 0;text-decoration:none}
@@ -161,10 +182,10 @@ footer .legal{width:100%;letter-spacing:.1em;color:#8E9196}
 
 <div class="ticker" aria-hidden="true">
   <div class="track">
-    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
-    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
-    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
-    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
+    <span>Trapsoul Vol. 02</span><span>·</span><span>Sat 11.14</span><span>·</span><span>Ocean Sports Bar</span><span>·</span><span>10 PM</span><span>·</span><span>21+</span><span>·</span><span>Rikko Boyz x 5PBZ</span><span>·</span>
+    <span>Trapsoul Vol. 02</span><span>·</span><span>Sat 11.14</span><span>·</span><span>Ocean Sports Bar</span><span>·</span><span>10 PM</span><span>·</span><span>21+</span><span>·</span><span>Rikko Boyz x 5PBZ</span><span>·</span>
+    <span>Trapsoul Vol. 02</span><span>·</span><span>Sat 11.14</span><span>·</span><span>Ocean Sports Bar</span><span>·</span><span>10 PM</span><span>·</span><span>21+</span><span>·</span><span>Rikko Boyz x 5PBZ</span><span>·</span>
+    <span>Trapsoul Vol. 02</span><span>·</span><span>Sat 11.14</span><span>·</span><span>Ocean Sports Bar</span><span>·</span><span>10 PM</span><span>·</span><span>21+</span><span>·</span><span>Rikko Boyz x 5PBZ</span><span>·</span>
   </div>
 </div>
 
@@ -193,10 +214,33 @@ footer .legal{width:100%;letter-spacing:.1em;color:#8E9196}
       <img class="hero-logo" src="assets/logo.png" alt="">
       <p class="eyebrow">Bloomington, Indiana · Est. 2026</p>
       <h1 class="metal">The nights Bloomington<br><span style="font-style:italic">talks about.</span></h1>
-      <p class="sub">Campus parties and venue takeovers at Indiana University. Eight events and 1,000+ people this fall. Lil 500 is next.</p>
+      <p class="sub">Campus parties and venue takeovers at Indiana University. Next up: Trapsoul Vol. 02 with Rikko Boyz, Saturday 11.14 at Ocean Sports Bar.</p>
       <div class="hero-ctas">
-        <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Upcoming Events on Posh</a>
-        <a class="btn btn-ghost" href="https://www.instagram.com/5pbz.ent/">Follow @5pbz.ent</a>
+        <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Trapsoul Tickets · Sat 11.14</a>
+        <a class="btn btn-ghost" href="#homecoming">Watch the Halloween recap</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap next" id="events" aria-label="Next event">
+    <div class="feature">
+      <div class="feature-img">
+        <img src="assets/flyer-trapsoul-vol2.jpg" alt="Trapsoul Volume 02 flyer, Rikko Boyz x 5PBZ, at Ocean Sports Bar" width="1000" height="1024">
+      </div>
+      <div class="feature-body">
+        <span class="badge">Next up · Saturday 11.14</span>
+        <h2 class="metal">Trapsoul<br><span style="font-style:italic">Volume 02</span></h2>
+        <p class="collab">Rikko Boyz x 5PBZ</p>
+        <ul class="facts">
+          <li><span class="k">When</span><span>Saturday, November 14 · 10 PM to 3 AM</span></li>
+          <li><span class="k">Where</span><span>Ocean Sports Bar · 320 N Walnut St, Bloomington</span></li>
+          <li><span class="k">Music</span><span>Spins by 30 · a night of trap and R&amp;B blends</span></li>
+          <li><span class="k">Entry</span><span>21+ · IDs will be scanned</span></li>
+        </ul>
+        <div class="feature-ctas">
+          <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Get Tickets</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/5pbz.ent/">Details on IG</a>
+        </div>
       </div>
     </div>
   </section>
@@ -212,14 +256,20 @@ footer .legal{width:100%;letter-spacing:.1em;color:#8E9196}
     <hr class="hair">
   </section>
 
-  <section class="wrap events" id="events">
+  <section class="wrap events" id="homecoming">
     <div class="events-head">
       <div>
-        <p class="eyebrow">Homecoming Weekend 2026</p>
+        <p class="eyebrow">Homecoming Weekend 2026 · Recap</p>
         <h2 class="h2 metal">Four nights. One week.</h2>
       </div>
-      <p class="lede">October 27 to 31. Next drops land on Posh and Instagram first.</p>
+      <p class="lede">October 27 to 31, closed out by Nightmare on 5ive Street on Halloween.</p>
     </div>
+    <figure class="film">
+      <video controls playsinline preload="metadata" poster="assets/halloween-recap-poster.jpg">
+        <source src="assets/halloween-recap.mp4" type="video/mp4">
+      </video>
+      <figcaption><strong>Nightmare on 5ive Street · Recap</strong><span>Halloween 2026 · 1525 S Rogers St</span></figcaption>
+    </figure>
     <div class="flyers">
       <figure class="flyer">
         <img src="assets/flyer-upstairs-takeover.jpg" alt="Upstairs Takeover flyer, bar crawl edition, Tuesday October 27, 11 PM" loading="lazy" width="960" height="1200">
