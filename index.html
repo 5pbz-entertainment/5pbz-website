@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5PBZ Entertainment</title>
+<meta name="description" content="5PBZ Entertainment: campus parties and venue takeovers at Indiana University in Bloomington. Tickets on Posh, flyers and drops on Instagram @5pbz.ent.">
+<meta property="og:title" content="5PBZ Entertainment">
+<meta property="og:description" content="The nights Bloomington talks about. Campus parties and venue takeovers at Indiana University.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000000; --panel:#0B0B0C; --panel-2:#111214;
+  --line:#1F1F1F; --line-2:#222326; --line-3:#333538; --line-4:#3A3C40; --line-5:#5A5D62;
+  --text:#E6E7E9; --text-hi:#F2F3F4; --text-mid:#D9DBDE; --text-lo:#A3A6AB; --silver:#C9CCD1;
+  --serif:'Bodoni Moda', Didot, Georgia, serif; --sans:Inter, system-ui, -apple-system, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--black)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--black);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--text)} a:hover{color:#fff}
+img,video{max-width:100%}
+:focus-visible{outline:2px solid var(--silver);outline-offset:3px}
+
+.wrap{max-width:1280px;margin:0 auto;padding-left:24px;padding-right:24px}
+.eyebrow{margin:0 0 14px;font-size:12px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--silver)}
+.serif{font-family:var(--serif);font-weight:400}
+.metal{background:linear-gradient(180deg,#FFFFFF 0%,#D9DBDE 38%,#8F9297 52%,#C7C9CD 68%,#F2F3F4 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.h2{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(40px,5vw,64px);line-height:1.05}
+.lede{font-size:17px;line-height:1.65;color:var(--text-lo)}
+.hair{background:linear-gradient(90deg,rgba(201,204,209,0) 0%,rgba(201,204,209,.55) 50%,rgba(201,204,209,0) 100%);height:1px;border:0;margin:0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:16px 30px;border-radius:2px;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0}
+.btn-metal{background:linear-gradient(180deg,#F7F8F9 0%,#D3D5D8 50%,#AEB1B6 100%);color:#000;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 1px 0 rgba(0,0,0,.6)}
+.btn-metal:hover{background:linear-gradient(180deg,#FFFFFF 0%,#E1E3E5 50%,#BEC1C5 100%);color:#000}
+.btn-ghost{border:1px solid var(--line-5);color:var(--text);font-weight:500;background:transparent}
+.btn-ghost:hover{border-color:var(--silver)}
+.link-line{display:inline-block;font-size:13px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--line-5);padding-bottom:6px}
+
+/* Ticker */
+.ticker{border-bottom:1px solid var(--line);overflow:hidden;padding:11px 0;font-size:12px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--silver)}
+.track{display:flex;gap:56px;width:max-content;animation:marquee 40s linear infinite}
+.track span{white-space:nowrap}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.track{animation:none}}
+
+/* Nav */
+.nav{border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.nav-logo img{width:72px;height:72px;object-fit:contain;display:block}
+.nav-links{display:flex;align-items:center;gap:32px;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+.nav-links a{text-decoration:none}
+.nav-ig{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px}
+.nav-links .btn{min-height:44px;padding:12px 22px}
+@media (max-width:760px){
+  .nav-text{display:none}
+  .nav-links{gap:8px}
+  .nav-logo img{width:60px;height:60px}
+}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;min-height:88vh;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.45) contrast(1.05)}
+.hero .shade{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+.hero .vignette{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 35%,rgba(0,0,0,.75) 100%)}
+.hero-inner{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:88px 24px 96px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-logo{width:min(400px,72vw);height:auto;display:block;filter:drop-shadow(0 8px 32px rgba(0,0,0,.8))}
+.hero .eyebrow{margin:8px 0 28px;letter-spacing:.4em}
+.hero h1{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(44px,7vw,96px);line-height:1.02;letter-spacing:-.01em;filter:drop-shadow(0 4px 24px rgba(0,0,0,.9))}
+.hero p.sub{margin:28px 0 40px;font-size:18px;line-height:1.6;color:var(--text-mid);max-width:560px;text-shadow:0 2px 16px rgba(0,0,0,.9)}
+.hero-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.hero .btn-ghost{border-color:var(--silver);background:rgba(0,0,0,.45)}
+@media (max-width:560px){.hero .eyebrow{letter-spacing:.22em;font-size:11px}.hero-ctas .btn{width:100%}.hero-inner{padding:64px 20px 72px}}
+
+/* Stats */
+.stats{padding-top:72px;padding-bottom:72px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;text-align:center;padding:48px 0}
+.stat-num{font-family:var(--serif);font-size:60px;line-height:1}
+.stat-label{margin-top:12px;font-size:12px;color:var(--text-lo);text-transform:uppercase;letter-spacing:.28em}
+
+/* Events */
+.events{padding-top:40px;padding-bottom:40px}
+.events-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:44px}
+.events-head .lede{margin:0;max-width:420px}
+.flyers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.flyer{margin:0;background:var(--panel);border:1px solid var(--line-2);display:flex;flex-direction:column}
+.flyer img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-bottom:1px solid var(--line-2);background:var(--panel-2)}
+.flyer figcaption{padding:22px 24px;display:flex;flex-direction:column;gap:8px}
+.flyer .meta{font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--text-lo)}
+.flyer h3{margin:0;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.1;color:var(--text-hi)}
+.flyer .venue{font-size:14px;color:var(--text-lo)}
+.earlier{margin-top:56px}
+.earlier h3{margin:0 0 8px;font-size:12px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--silver)}
+.earlier ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-3)}
+.earlier li{display:grid;grid-template-columns:110px 1fr auto;gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line-3)}
+.earlier .date{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--text-lo)}
+.earlier .name{font-family:var(--serif);font-size:24px;color:var(--text-hi)}
+.earlier .tag{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--text-lo)}
+@media (max-width:560px){.earlier li{grid-template-columns:1fr;gap:6px}}
+
+/* Instagram band */
+.ig{padding-top:104px}
+.ig a{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid var(--line-3);border-bottom:1px solid var(--line-3);padding:40px 0;text-decoration:none}
+.ig .handle{display:flex;align-items:center;gap:20px}
+.ig .handle span{font-family:var(--serif);font-size:clamp(36px,5vw,60px);line-height:1}
+.ig .follow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--text-mid)}
+
+/* Panels */
+.panel-sec{padding-top:104px;padding-bottom:40px}
+.panel{border:1px solid var(--line-3);background:var(--panel)}
+.partner{padding:clamp(32px,6vw,80px);display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.partner > div{flex:1 1 380px;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.chips span{border:1px solid var(--line-4);padding:11px 18px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-mid)}
+.contact-line{margin:14px 0 0;font-size:14px;color:var(--text-lo)}
+.contact-line a{color:var(--text-mid)}
+
+.lil{padding:clamp(40px,7vw,96px) clamp(24px,5vw,72px);text-align:center;display:flex;flex-direction:column;align-items:center}
+.lil .eyebrow{letter-spacing:.4em;margin-bottom:20px}
+.lil h2{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(64px,11vw,160px);line-height:.95;letter-spacing:-.01em}
+.lil .tagline{margin:8px 0 0;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,32px);color:var(--text-mid)}
+.lil .hair{width:min(520px,80%);margin:40px auto}
+.lil .lede{margin:0 0 40px;max-width:560px}
+.nights{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;width:100%;max-width:760px;margin-bottom:44px}
+.nights div{border:1px solid #2A2B2E;padding:24px 16px}
+.nights .n{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--text-lo)}
+.nights .t{margin-top:10px;font-family:var(--serif);font-size:28px}
+.lil-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+
+.join{padding-top:104px;padding-bottom:104px;display:flex;flex-wrap:wrap;gap:48px}
+.join > div{flex:1 1 420px;min-width:0}
+.join .panel{padding:48px}
+.join h2{margin:0 0 14px;font-family:var(--serif);font-weight:400;font-size:44px;line-height:1.05}
+.join .lede{margin:0 0 28px}
+.join .stack{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.perks{margin:0 0 32px;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font-size:15px;color:var(--text-mid)}
+.perks li{display:flex;gap:14px;align-items:center}
+.perks li::before{content:"";width:24px;height:1px;background:var(--silver);flex:none}
+.team-col{padding:48px 0}
+@media (max-width:560px){.join .panel{padding:32px 24px}.team-col{padding:0}}
+
+/* Footer */
+footer{border-top:1px solid var(--line)}
+footer .wrap{padding-top:56px;padding-bottom:56px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:center}
+footer .brand{display:flex;align-items:center;gap:16px}
+footer .brand img{width:84px;height:84px;object-fit:contain}
+footer .brand span,footer .legal{color:var(--text-lo);font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+footer .links{display:flex;flex-wrap:wrap;gap:32px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+footer .links a{text-decoration:none}
+footer .legal{width:100%;letter-spacing:.1em;color:#8E9196}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
+    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
+    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
+    <span>Fall 2026</span><span>·</span><span>8 Events</span><span>·</span><span>1,000+ Attendees</span><span>·</span><span>Lil 500 · Spring 2027</span><span>·</span><span>@5pbz.ent</span><span>·</span>
+  </div>
+</div>
+
+<header class="nav">
+  <nav class="wrap" aria-label="Main">
+    <a class="nav-logo" href="#top" aria-label="5PBZ Entertainment home"><img src="assets/logo.png" alt="5PBZ ENT"></a>
+    <div class="nav-links">
+      <a class="nav-text" href="#events">Events</a>
+      <a class="nav-text" href="#partner">Partner</a>
+      <a class="nav-text" href="#lil500">Lil 500</a>
+      <a class="nav-text" href="#join">Join</a>
+      <a class="nav-ig" href="https://www.instagram.com/5pbz.ent/" aria-label="5PBZ on Instagram"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"></circle></svg></a>
+      <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Tickets</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/poster.jpg" aria-hidden="true">
+      <source src="assets/collage.mp4" type="video/mp4">
+    </video>
+    <div class="shade" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <img class="hero-logo" src="assets/logo.png" alt="">
+      <p class="eyebrow">Bloomington, Indiana · Est. 2026</p>
+      <h1 class="metal">The nights Bloomington<br><span style="font-style:italic">talks about.</span></h1>
+      <p class="sub">Campus parties and venue takeovers at Indiana University. Eight events and 1,000+ people this fall. Lil 500 is next.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Upcoming Events on Posh</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/5pbz.ent/">Follow @5pbz.ent</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap stats" aria-label="By the numbers">
+    <hr class="hair">
+    <div class="stats-grid">
+      <div><div class="stat-num metal">8</div><div class="stat-label">Events this fall</div></div>
+      <div><div class="stat-num metal">200K+</div><div class="stat-label">Instagram views</div></div>
+      <div><div class="stat-num metal">4</div><div class="stat-label">Homecoming nights</div></div>
+      <div><div class="stat-num metal">1,000+</div><div class="stat-label">Total attendees</div></div>
+    </div>
+    <hr class="hair">
+  </section>
+
+  <section class="wrap events" id="events">
+    <div class="events-head">
+      <div>
+        <p class="eyebrow">Homecoming Weekend 2026</p>
+        <h2 class="h2 metal">Four nights. One week.</h2>
+      </div>
+      <p class="lede">October 27 to 31. Next drops land on Posh and Instagram first.</p>
+    </div>
+    <div class="flyers">
+      <figure class="flyer">
+        <img src="assets/flyer-upstairs-takeover.jpg" alt="Upstairs Takeover flyer, bar crawl edition, Tuesday October 27, 11 PM" loading="lazy" width="960" height="1200">
+        <figcaption><span class="meta">Tue, Oct 27 · 11 PM</span><h3>Upstairs Takeover</h3><span class="venue">The Upstairs Pub · Bar crawl edition</span></figcaption>
+      </figure>
+      <figure class="flyer">
+        <img src="assets/flyer-hallowasted.jpg" alt="Hallowasted flyer, Wednesday October 28, 6 to 10 PM, Lower Cascade" loading="lazy" width="960" height="1200">
+        <figcaption><span class="meta">Wed, Oct 28 · 6 to 10 PM</span><h3>Hallowasted</h3><span class="venue">Lower Cascade</span></figcaption>
+      </figure>
+      <figure class="flyer">
+        <img src="assets/flyer-juke-joint.jpg" alt="The Juke Joint flyer, October 30, 5 to 10 PM" loading="lazy" width="960" height="1200">
+        <figcaption><span class="meta">Fri, Oct 30 · 5 to 10 PM</span><h3>The Juke Joint</h3><span class="venue">1720 W That Rd, Bloomington</span></figcaption>
+      </figure>
+      <figure class="flyer">
+        <img src="assets/flyer-nightmare-5ive-street.jpg" alt="Nightmare on 5ive Street flyer, Saturday October 31, 10 PM to 2 AM" loading="lazy" width="960" height="1200">
+        <figcaption><span class="meta">Sat, Oct 31 · 10 PM to 2 AM</span><h3>Nightmare on 5ive Street</h3><span class="venue">1525 S Rogers St · $1,000 best costume</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="earlier">
+      <h3>Earlier this semester</h3>
+      <ul>
+        <li><span class="date">Oct 07</span><span class="name">Last Lap Owtside</span><span class="tag">Free event</span></li>
+        <li><span class="date">Sep 12</span><span class="name">Battle of the Bison</span><span class="tag">Flagship</span></li>
+        <li><span class="date">Sep 04</span><span class="name">Pool Party</span><span class="tag">Free event</span></li>
+        <li><span class="date">Aug 22</span><span class="name">Anything But A Cup</span><span class="tag">Kickoff</span></li>
+      </ul>
+    </div>
+    <p style="margin:32px 0 0"><a class="link-line" href="https://posh.vip/g/5pbz-ent">All 5PBZ events on Posh</a></p>
+  </section>
+
+  <section class="wrap ig" aria-label="Instagram">
+    <a href="https://www.instagram.com/5pbz.ent/">
+      <span class="handle">
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#C9CCD1" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.9" fill="#C9CCD1" stroke="none"></circle></svg>
+        <span class="metal">@5pbz.ent</span>
+      </span>
+      <span class="follow">Flyers, recaps and drops first · Follow</span>
+    </a>
+  </section>
+
+  <section class="wrap panel-sec" id="partner">
+    <div class="panel partner">
+      <div>
+        <p class="eyebrow">Work with 5PBZ</p>
+        <h2 class="metal serif" style="margin:0 0 22px;font-size:clamp(38px,4.5vw,60px);line-height:1.05">Bring your venue, brand, or night.</h2>
+        <p class="lede" style="margin:0">We handle promotion, ticketing, staffing, and security. Tell us what you are working with and we will build the night around it.</p>
+      </div>
+      <div>
+        <div class="chips">
+          <span>Venues</span><span>Brands &amp; Sponsors</span><span>Private Events</span><span>DJs &amp; Artists</span><span>Food &amp; Vendors</span>
+        </div>
+        <a class="btn btn-metal" href="mailto:5pbz@5pbz.com?subject=Partnering%20with%205PBZ">Email us</a>
+        <p class="contact-line"><a href="mailto:5pbz@5pbz.com">5pbz@5pbz.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap panel-sec" id="lil500">
+    <div class="panel lil">
+      <p class="eyebrow">On the way · Spring 2027</p>
+      <h2 class="metal">Lil 500</h2>
+      <p class="tagline">The biggest weekend in Bloomington.</p>
+      <hr class="hair">
+      <p class="lede">A full weekend from 5PBZ. Lineup, venues, and dates drop on Posh and Instagram first.</p>
+      <div class="nights">
+        <div><div class="n">Night One</div><div class="t metal">TBA</div></div>
+        <div><div class="n">Night Two</div><div class="t metal">TBA</div></div>
+        <div><div class="n">Night Three</div><div class="t metal">TBA</div></div>
+      </div>
+      <div class="lil-ctas">
+        <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Follow 5PBZ on Posh</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/5pbz.ent/">Turn on IG notifications</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap join" id="join">
+    <div class="panel">
+      <p class="eyebrow">First access</p>
+      <h2 class="metal">Never miss a drop.</h2>
+      <p class="lede">Follow 5PBZ on Posh to get notified the moment tickets go live. Flyers and lineups hit Instagram first.</p>
+      <div class="stack">
+        <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Follow on Posh</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/5pbz.ent/">Follow @5pbz.ent</a>
+      </div>
+    </div>
+    <div class="team-col">
+      <p class="eyebrow">Careers</p>
+      <h2 class="metal">Join the team.</h2>
+      <p class="lede">Promote, film, run door, or design. Team members are paid per deliverable and hold their own guest list for every event.</p>
+      <ul class="perks">
+        <li>Paid per deliverable</li>
+        <li>Guest list every event</li>
+        <li>First look at lineups</li>
+      </ul>
+      <a class="btn btn-ghost" href="mailto:5pbz@5pbz.com?subject=Joining%20the%205PBZ%20team">Apply by email</a>
+      <p class="contact-line">Tell us what you want to do and send your IG: <a href="mailto:5pbz@5pbz.com">5pbz@5pbz.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <img src="assets/logo.png" alt="5PBZ ENT">
+      <span>5PBZ Entertainment LLC · Bloomington, Indiana</span>
+    </div>
+    <div class="links">
+      <a href="https://www.instagram.com/5pbz.ent/">Instagram</a>
+      <a href="https://posh.vip/g/5pbz-ent">Posh</a>
+      <a href="mailto:5pbz@5pbz.com">Contact</a>
+      <a href="#partner">Partner</a>
+    </div>
+    <span class="legal">© 2026 5PBZ Entertainment LLC</span>
+  </div>
+</footer>
+
+</body>
+</html>
