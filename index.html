@@ -158,6 +158,25 @@ img,video{max-width:100%}
 @media (max-width:640px){.nights{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .lil-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 
+/* Lil 500: crimson and cream */
+.lil-iu{--crimson:#990000;--crimson-deep:#5E0A07;--cream:#EEEDEB;position:relative;overflow:hidden;border-color:var(--crimson);
+  background:radial-gradient(ellipse at 50% 0%,#A3120D 0%,var(--crimson) 35%,var(--crimson-deep) 100%);color:var(--cream)}
+.lil-iu .stripes{position:absolute;left:0;right:0;top:0;height:28px;background:repeating-linear-gradient(90deg,var(--cream) 0 9px,var(--crimson) 9px 18px);border-bottom:1px solid rgba(0,0,0,.25)}
+.lil-iu .eyebrow{color:var(--cream);margin-top:24px}
+.lil-iu h2{color:var(--cream);text-shadow:0 6px 30px rgba(0,0,0,.35)}
+.lil-iu .tagline{color:var(--cream)}
+.lil-iu .hair{background:linear-gradient(90deg,rgba(238,237,235,0) 0%,rgba(238,237,235,.7) 50%,rgba(238,237,235,0) 100%)}
+.lil-iu .lede,.lil-iu .lineup-label{color:rgba(238,237,235,.88)}
+.lil-iu .nights li{border-color:rgba(238,237,235,.45);background:rgba(0,0,0,.14)}
+.lil-iu .nights .n{color:rgba(238,237,235,.85)}
+.lil-iu .nights .d{color:var(--cream)}
+.lil-iu .nights .t{color:var(--cream)}
+.btn-cream{background:var(--cream);color:var(--crimson);box-shadow:0 1px 0 rgba(0,0,0,.35)}
+.btn-cream:hover{background:#FFFFFF;color:var(--crimson)}
+.lil-iu .btn-ghost{border-color:var(--cream);color:var(--cream)}
+.lil-iu .btn-ghost:hover{background:rgba(238,237,235,.1);color:#fff}
+.lil-iu :focus-visible{outline-color:var(--cream)}
+
 .join{padding-top:104px;padding-bottom:104px;display:flex;flex-wrap:wrap;gap:48px}
 .join > div{flex:1 1 420px;min-width:0}
 .join .panel{padding:48px}
@@ -349,25 +368,26 @@ footer .legal{width:100%;letter-spacing:.1em;color:#8E9196}
   </section>
 
   <section class="wrap panel-sec" id="lil500">
-    <div class="panel lil">
+    <div class="panel lil lil-iu">
+      <div class="stripes" aria-hidden="true"></div>
       <p class="eyebrow">April 17 to 25, 2027</p>
-      <h2 class="metal">Lil 500</h2>
+      <h2>Lil 500</h2>
       <p class="tagline">The greatest college weekend.</p>
       <hr class="hair">
       <p class="lede">Eight nights from 5PBZ. Venues and headliners drop on Posh and Instagram first.</p>
       <p class="lineup-label">Draft lineup</p>
       <ul class="nights">
-        <li><div class="n">Sat</div><div class="d metal">4/17</div><div class="t">TBA</div></li>
-        <li><div class="n">Sun</div><div class="d metal">4/18</div><div class="t">TBA</div></li>
-        <li><div class="n">Tue</div><div class="d metal">4/20</div><div class="t">TBA</div></li>
-        <li><div class="n">Wed</div><div class="d metal">4/21</div><div class="t">TBA</div></li>
-        <li><div class="n">Thu</div><div class="d metal">4/22</div><div class="t">TBA</div></li>
-        <li><div class="n">Fri</div><div class="d metal">4/23</div><div class="t">TBA</div></li>
-        <li><div class="n">Sat</div><div class="d metal">4/24</div><div class="t">TBA</div></li>
-        <li><div class="n">Sun</div><div class="d metal">4/25</div><div class="t">TBA</div></li>
+        <li><div class="n">Sat</div><div class="d">4/17</div><div class="t">TBA</div></li>
+        <li><div class="n">Sun</div><div class="d">4/18</div><div class="t">TBA</div></li>
+        <li><div class="n">Tue</div><div class="d">4/20</div><div class="t">TBA</div></li>
+        <li><div class="n">Wed</div><div class="d">4/21</div><div class="t">TBA</div></li>
+        <li><div class="n">Thu</div><div class="d">4/22</div><div class="t">TBA</div></li>
+        <li><div class="n">Fri</div><div class="d">4/23</div><div class="t">TBA</div></li>
+        <li><div class="n">Sat</div><div class="d">4/24</div><div class="t">TBA</div></li>
+        <li><div class="n">Sun</div><div class="d">4/25</div><div class="t">TBA</div></li>
       </ul>
       <div class="lil-ctas">
-        <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Follow 5PBZ on Posh</a>
+        <a class="btn btn-cream" href="https://posh.vip/g/5pbz-ent">Follow 5PBZ on Posh</a>
         <a class="btn btn-ghost" href="https://www.instagram.com/5pbz.ent/">Turn on IG notifications</a>
       </div>
     </div>
