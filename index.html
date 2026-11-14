@@ -171,6 +171,13 @@ img,video{max-width:100%}
 .lil-iu .nights .n{color:rgba(238,237,235,.85)}
 .lil-iu .nights .d{color:var(--cream)}
 .lil-iu .nights .t{color:var(--cream)}
+.lil-film{margin:0 0 44px;width:100%;max-width:880px;border:1px solid rgba(238,237,235,.55);background:#000}
+.lil-film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+.lil-film figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding:16px 20px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:rgba(238,237,235,.85);background:var(--crimson-deep);text-align:left}
+.lil-film figcaption strong{color:var(--cream);font-weight:600}
+.lil-iu .nights li.set{background:var(--cream);border-color:var(--cream)}
+.lil-iu .nights li.set .n,.lil-iu .nights li.set .d,.lil-iu .nights li.set .t{color:var(--crimson)}
+.lil-iu .nights li.set .t{font-weight:600;letter-spacing:.14em}
 .btn-cream{background:var(--cream);color:var(--crimson);box-shadow:0 1px 0 rgba(0,0,0,.35)}
 .btn-cream:hover{background:#FFFFFF;color:var(--crimson)}
 .lil-iu .btn-ghost{border-color:var(--cream);color:var(--cream)}
@@ -375,9 +382,15 @@ footer .legal{width:100%;letter-spacing:.1em;color:#8E9196}
       <p class="tagline">The greatest college weekend.</p>
       <hr class="hair">
       <p class="lede">Eight nights from 5PBZ. Venues and headliners drop on Posh and Instagram first.</p>
+      <figure class="lil-film">
+        <video controls playsinline preload="metadata" poster="assets/before-the-chaos-poster.jpg">
+          <source src="assets/before-the-chaos.mp4" type="video/mp4">
+        </video>
+        <figcaption><strong>Night one · Before the Chaos</strong><span>Saturday 4/17</span></figcaption>
+      </figure>
       <p class="lineup-label">Draft lineup</p>
       <ul class="nights">
-        <li><div class="n">Sat</div><div class="d">4/17</div><div class="t">TBA</div></li>
+        <li class="set"><div class="n">Sat</div><div class="d">4/17</div><div class="t">Before the Chaos</div></li>
         <li><div class="n">Sun</div><div class="d">4/18</div><div class="t">TBA</div></li>
         <li><div class="n">Tue</div><div class="d">4/20</div><div class="t">TBA</div></li>
         <li><div class="n">Wed</div><div class="d">4/21</div><div class="t">TBA</div></li>
