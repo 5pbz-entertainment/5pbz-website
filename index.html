@@ -149,10 +149,13 @@ img,video{max-width:100%}
 .lil .tagline{margin:8px 0 0;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,32px);color:var(--text-mid)}
 .lil .hair{width:min(520px,80%);margin:40px auto}
 .lil .lede{margin:0 0 40px;max-width:560px}
-.nights{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;width:100%;max-width:760px;margin-bottom:44px}
-.nights div{border:1px solid #2A2B2E;padding:24px 16px}
+.lineup-label{margin:0 0 16px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--text-lo)}
+.nights{list-style:none;margin:0 0 44px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;width:100%;max-width:880px}
+.nights li{border:1px solid #2A2B2E;padding:22px 12px}
 .nights .n{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--text-lo)}
-.nights .t{margin-top:10px;font-family:var(--serif);font-size:28px}
+.nights .d{margin-top:8px;font-family:var(--serif);font-size:30px;line-height:1}
+.nights .t{margin-top:10px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--silver)}
+@media (max-width:640px){.nights{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .lil-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 
 .join{padding-top:104px;padding-bottom:104px;display:flex;flex-wrap:wrap;gap:48px}
@@ -329,16 +332,22 @@ footer .legal{width:100%;letter-spacing:.1em;color:#8E9196}
 
   <section class="wrap panel-sec" id="lil500">
     <div class="panel lil">
-      <p class="eyebrow">On the way · Spring 2027</p>
+      <p class="eyebrow">April 17 to 25, 2027</p>
       <h2 class="metal">Lil 500</h2>
       <p class="tagline">The greatest college weekend.</p>
       <hr class="hair">
-      <p class="lede">A full weekend from 5PBZ. Lineup, venues, and dates drop on Posh and Instagram first.</p>
-      <div class="nights">
-        <div><div class="n">Night One</div><div class="t metal">TBA</div></div>
-        <div><div class="n">Night Two</div><div class="t metal">TBA</div></div>
-        <div><div class="n">Night Three</div><div class="t metal">TBA</div></div>
-      </div>
+      <p class="lede">Eight nights from 5PBZ. Venues and headliners drop on Posh and Instagram first.</p>
+      <p class="lineup-label">Draft lineup</p>
+      <ul class="nights">
+        <li><div class="n">Sat</div><div class="d metal">4/17</div><div class="t">TBA</div></li>
+        <li><div class="n">Sun</div><div class="d metal">4/18</div><div class="t">TBA</div></li>
+        <li><div class="n">Tue</div><div class="d metal">4/20</div><div class="t">TBA</div></li>
+        <li><div class="n">Wed</div><div class="d metal">4/21</div><div class="t">TBA</div></li>
+        <li><div class="n">Thu</div><div class="d metal">4/22</div><div class="t">TBA</div></li>
+        <li><div class="n">Fri</div><div class="d metal">4/23</div><div class="t">TBA</div></li>
+        <li><div class="n">Sat</div><div class="d metal">4/24</div><div class="t">TBA</div></li>
+        <li><div class="n">Sun</div><div class="d metal">4/25</div><div class="t">TBA</div></li>
+      </ul>
       <div class="lil-ctas">
         <a class="btn btn-metal" href="https://posh.vip/g/5pbz-ent">Follow 5PBZ on Posh</a>
         <a class="btn btn-ghost" href="https://www.instagram.com/5pbz.ent/">Turn on IG notifications</a>
